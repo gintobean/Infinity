@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Infinity: Rooms</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="rooms.css">
+  <link rel="stylesheet" href="global.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img class="navbar-image" src="images/corner.png" alt="sdvsd">
+      <img class="navbar-image green" src="images/corner2.png" alt="sdvsd">
+      <a href="index.html">
+        <img class="logo" src="images/logo.gif" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="rooms.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="gallery.html">Gallery</a>
+          </li>
+          <li class="bar nav-item">
+            <i class="icon fas fa-bars"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="overlay">
+    <div class="menu-cont container-fluid">
+      <a class="close" href="#">
+        <i class="fas fa-times fa-4x"></i>
+      </a>
+      <a class="link" href="index.html">
+        <h2 class="item">Home</h2>
+      </a>
+      <h2 class="item">The Building</h2>
+      <a class="link" href="amenities.html">
+        <h2 class="item">Amenities</h2>
+      </a>
+      <a class="link" href="gallery.html">
+        <h2 class="item">Gallery</h2>
+      </a>
+      <a class="link" href="map.html">
+        <h2 class="item">Location</h2>
+      </a>
+      <h2 class="item">Tour</h2>
+      <h2 class="item">Our Developers</h2>
+    </div>
+  </div>
+
+  <section id="top">
+    <div class="container-fluid">
+      <div class="top-container">
+        <img class="top-image" src="roomImages/7.jpeg" alt="bed">
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="container-fluid">
+      <div class="room-title">
+        <h2 class="content-title">Rooms</h2>
+      </div>
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Studio with Single Bedroom - Bayview</h2>
+          <img class="cardimage" src="roomImages/1.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">1423</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">1</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">2</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$1,500,320</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Studio with Double Bedroom - Bayview</h2>
+          <img class="cardimage" src="roomImages/2.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">1969</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">2</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">3</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$1,576,900</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Studio with Single Bedroom - Cityview</h2>
+          <img class="cardimage" src="roomImages/3.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">1560</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">1</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">2</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$1,590,680</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Studio with Double Bedroom - Cityview</h2>
+          <img class="cardimage" src="roomImages/4.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">2063</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">2</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">3</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$2,540,300</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Executive Penthous - Bayview</h2>
+          <img class="cardimage" src="roomImages/5.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">4803</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">4</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">5</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$13,000,020</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="roomcard">
+        <div class="left">
+          <h2 class="roomtype underlined">Exectutive Penthouse - Cityview</h2>
+          <img class="cardimage" src="roomImages/6.jpeg" alt="">
+        </div>
+        <div class="right">
+          <div class="stats row">
+
+            <div class="data col">
+              <h2 class="key">Sqft</h2>
+              <h4 class="value">4565</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bed</h2>
+              <h4 class="value">4</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Bath</h2>
+              <h4 class="value">5</h4>
+            </div>
+            <div class="data col">
+              <h2 class="key">Price</h2>
+              <h4 class="value">$10,500,900</h4>
+            </div>
+          </div>
+
+          <div class="links row">
+            <div class="data col">
+              <h2 class="key">Floorplan</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-map"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Video</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="data col">
+              <h2 class="key">Images</h2>
+              <button type="button" class="room-btn btn btn-outline-dark">
+                <i class="far fa-images"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <h2 class="footer-title">Experience Infinity today.</h2>
+          <button type="button" class="footer-btn btn btn-outline-light">Schedule A Tour</button>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="rooms.js"></script>
+  <script src="global.js"></script>
+
+</body>
+
+</html>
