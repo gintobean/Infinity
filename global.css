@@ -1,0 +1,124 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  /* overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
+}
+
+h1, h2, h3 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.content-title {
+  margin: 10% 3% 7%;
+}
+
+.description {
+  margin: 2% 15% 0;
+  line-height: 1.8;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.underlined {
+  border-bottom: 1px solid #176F5C;
+}
+
+.green {
+  opacity: 0;
+}
+/* navbar */
+
+.navbar{
+  background: transparent !important;
+  top: 0;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin: 0 8%;
+  font-size: 1.7rem;
+  color:black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:black;
+}
+
+.navbar-image {
+  position: absolute;
+  z-index: -2;
+  width: 720%;
+  height: 300%;
+}
+
+.green{
+  opacity:0;
+}
+.logo {
+  margin-top: 20%;
+  margin-left: 15%;
+  position: relative;
+}
+
+/* overlay */
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.overlay {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5000;
+  visibility: hidden;
+}
+
+.menu-cont {
+  align-items: center;
+  justify-content: center;
+  padding: 10% 10%;
+}
+
+.item {
+  margin: 5% 0;
+}
+
+.close {
+  color: black;
+  float: right;
+}
+
+/* footer */
+footer {
+  background-color: #176F5C;
+  color: white;
+  height: 20vh;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

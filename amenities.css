@@ -1,0 +1,116 @@
+/* top */
+
+.top-pic {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  object-fit: cover;
+}
+
+/* amenities */
+
+.pic-row {
+  display: flex;
+}
+
+.pic-column {
+  width: 70%;
+  height: 100%;
+  margin: 5% 0;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+.amenities-pic {
+  position: relative;
+  width: 0%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.pic-left {
+  border-right: solid 20px #176F5C;
+}
+
+.pic-right {
+  border-left: solid 20px #176F5C;
+}
+
+.pic-row {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.pic-column {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.desc-column {
+  width: 50%;
+  padding: 10% 5%;
+}
+
+.title {
+  margin: 2vh 0;
+  font-size: 2.3rem;
+  padding: 5% 1%;
+  border-bottom: 1px solid #176F5C;
+}
+
+.desc {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* collage */
+.collage-row {
+  width: 100%;
+  height: 60%;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.cc {
+  padding: 2% 2%;
+}
+
+.collage-col1 {
+  width: 200%;
+}
+
+.collage-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  .pic-row {
+    display: inline-block;
+  }
+
+  .pic-column, .desc-column{
+    margin: 0;
+    width: 100%;
+  }
+
+  .gallery-pic {
+    margin: 5% 5%;
+    border-radius: 0;
+  }
+
+  .textbox {
+    padding: 5% 7%;
+    margin: 0;
+  }
+
+}
