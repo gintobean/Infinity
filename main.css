@@ -32,7 +32,6 @@ h1, h2, h3 {
 /* navbar */
 
 .navbar {
-  background: transparent !important;
   top: 0;
   width: 100%;
   top: 0px;
@@ -44,13 +43,13 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-item {
+.navbar-nav .nav-item {
   margin: 0 8%;
   font-size: 1.7rem;
   color:white;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color:white;
 }
 
@@ -64,6 +63,24 @@ h1, h2, h3 {
 .logo {
   margin-top: 20%;
   margin-left: 15%;
+  position: relative;
+}
+
+.navbar-toggler {
+  margin-right: 40px;
+  transition: ease-in-out 0.5s;
+}
+.bar-sm {
+  color: #DDDDDD;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.bar-sm:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #CEE5D0;
+    transform: scale(1.1);
 }
 
 /* overlay */
@@ -90,7 +107,7 @@ h1, h2, h3 {
 }
 
 .item {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .close {
@@ -226,4 +243,44 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar {
+    background-color: rgba(0,0,0,0) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 50%;
+    bottom: 15px;
+  }
+
+  .navbar-image {
+    visibility: hidden;
+  }
+  .navbar {
+    background-color: white;
+  }
+
+  .navbar-nav .nav-link, .navbar-nav .nav-item {
+    color: black;
+  }
+
+  .main-title {
+    font-size: 2.4rem;
+  }
+
+  .content-title, .cta {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    font-size: 1.4rem;
+  }
 }

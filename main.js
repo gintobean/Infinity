@@ -29,13 +29,24 @@ gsap.to(".green", {
   duration: 0.5
 });
 
+gsap.to(".navbar-nav .nav-item, .navbar-nav .nav-link", {
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 100px",
+    toggleActions: "play complete play reverse"
+  },
+  color: "white",
+  ease: "power1.out",
+  duration: 0.5
+});
+
 gsap.to(".logo", {
   scrollTrigger: {
     trigger: "#about",
     start: "top 100px",
     toggleActions: "play complete play reverse"
   },
-  attr: {src:"images/negativeLogo.gif"},
+  attr: {src:"/Users/philipng/Desktop/Infinity/Global/images/negativeLogo.gif"},
   opacity:1,
   ease: "power1.out",
   duration: 0.2
@@ -65,6 +76,16 @@ gsap.to(".main-title", {
   duration: 0.2
 });
 
+gsap.to(".navbar", {
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 100px",
+    toggleActions: "play complete play reverse"
+  },
+  backgroundColor: "#176F5C",
+  ease: "power1.out",
+  duration: 0.3
+});
 
 var lastScrollTop = 0;
 $(window).on("click",function(event){
@@ -109,5 +130,5 @@ $(".nav-item .nav-link, .nav-item").hover(function() {
   $(this).css("color", "black");
 }, function() {
     $(this).css("border-bottom", "none");
-    $(this).css("color", "white");
+    $(this).css("color", "black");
   });
