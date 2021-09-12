@@ -1,5 +1,10 @@
-.interactive-map {
+#content {
   position: relative;
+  top: 200px;
+}
+
+.interactive-map {
+  position: static;
   top: 200px;
   width: 100%;
   height: 100vh;
@@ -8,4 +13,16 @@
 .map {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    top: 100px;
+  }
 }

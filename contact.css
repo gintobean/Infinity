@@ -21,12 +21,8 @@
   padding: 2% 10%;
 }
 
-.navbar-light .navbar-nav .nav-item {
-  color:white !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color:white !important;
+.navbar {
+  background-color: #176F5C !important;
 }
 
 input {

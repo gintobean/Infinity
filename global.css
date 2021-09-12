@@ -71,14 +71,20 @@ section {
 
 .navbar-toggler {
   margin-right: 40px;
+  transition: ease-in-out 0.5s;
 }
 
 .bar-sm {
-  color: #DDDDDD;
+  color: #CEE5D0;
 }
 
-.bar-sm .active {
-  border: none;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.bar-sm:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #CEE5D0;
+    transform: scale(1.1);
 }
 
 .green{

@@ -46,7 +46,7 @@ gsap.to(".logo", {
     start: "top 100px",
     toggleActions: "play complete play reverse"
   },
-  attr: {src:"images/negativeLogo.gif"},
+  attr: {src:"/Users/philipng/Desktop/Infinity/Global/images/negativeLogo.gif"},
   opacity:1,
   ease: "power1.out",
   duration: 0.2
@@ -62,7 +62,7 @@ gsap.to(".navbar-image", {
     toggleActions: "play complete play reverse"
   },
   ease: "power1.out",
-  width: () => 8 * width,
+  width: () => 7 * width,
   duration: 0.7
 });
 
@@ -85,6 +85,37 @@ gsap.to(".navbar", {
   backgroundColor: "#176F5C",
   ease: "power1.out",
   duration: 0.3
+});
+
+gsap.fromTo("footer", {
+  scrollTrigger: {
+    trigger: "#pic",
+    start: "top 20%",
+    toggleActions: "play complete play reverse"
+  },
+  ease: "power1.out",
+  y: 50,
+  duration: 0.7
+}, {
+  scrollTrigger: {
+    trigger: "#pic",
+    start: "top 20%",
+    toggleActions: "play complete play reverse"
+  },
+  ease: "power1.in",
+  y:0,
+  opacity: 1,
+  duration: 0.7
+});
+
+gsap.to(".vid", {
+  scrollTrigger: {
+    trigger: "#about",
+    start: "bottom top",
+    toggleActions: "play complete play reverse"
+  },
+  visibility: "hidden",
+  duration: 0.1
 });
 
 var lastScrollTop = 0;
@@ -129,6 +160,12 @@ $(".nav-item .nav-link, .nav-item").hover(function() {
   $(this).css("border-bottom", "1px solid black");
   $(this).css("color", "black");
 }, function() {
+  if ($(window).scrollTop() > 800) {
     $(this).css("border-bottom", "none");
     $(this).css("color", "black");
-  });
+  }
+else {
+  $(this).css("border-bottom", "none");
+  $(this).css("color", "white");
+}
+});

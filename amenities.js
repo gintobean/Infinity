@@ -18,11 +18,22 @@ gsap.to(".logo", {
     toggleActions: "play complete play reverse"
   },
   attr: {
-    src: "images/negativeLogo.gif"
+    src: "/Users/philipng/Desktop/Infinity/Global/images/negativeLogo.gif"
   },
   opacity: 1,
   ease: "power1.out",
   duration: 0.2
+});
+
+gsap.to(".navbar", {
+  scrollTrigger: {
+    trigger: "#amenities",
+    start: "top 100px",
+    toggleActions: "play complete play reverse"
+  },
+  backgroundColor: "#176F5C",
+  ease: "power1.out",
+  duration: 0.3
 });
 
 gsap.to(".nav-item, .nav-link, .bar", {
