@@ -46,7 +46,7 @@ gsap.to(".logo", {
     start: "top 100px",
     toggleActions: "play complete play reverse"
   },
-  attr: {src:"/Users/philipng/Desktop/Infinity/Global/images/negativeLogo.gif"},
+  attr: {src:"images/negativeLogo.gif"},
   opacity:1,
   ease: "power1.out",
   duration: 0.2
