@@ -1,4 +1,5 @@
 .form {
+  padding: 0 10%;
   margin-top: 250px;
 }
 .form-cont, .info-cont {
@@ -40,6 +41,10 @@ label {
   font-size: 1.5rem;
 }
 
+#information {
+  padding: 0 10%;
+}
+
 .infobox {
   margin: 20px 0;
 }
@@ -52,12 +57,12 @@ label {
 
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin: 4% 5%;
+  margin: 4% 0;
 }
 .links {
-  margin: 0 10%;
+  margin-right: 10%;
   font-size: 1.5rem;
   text-decoration: none;
   color: #176F5C;

@@ -57,8 +57,8 @@
 }
 
 .cardimage {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: -10px;
   object-fit: cover;
   height: 75%;
   width: 100%;
@@ -99,4 +99,30 @@
 
 .room-btn {
   margin: 3% auto;
+}
+
+@media screen and (max-width: 768px) {
+  .roomcard {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .cardimage {
+    position: relative;
+    height: 60%;
+    width: 100%;
+  }
+  .left, .right {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+
+  .data {
+    margin: 0 2%;
+  }
 }

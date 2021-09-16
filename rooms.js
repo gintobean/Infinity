@@ -58,17 +58,3 @@ cards.forEach((card) => {
     }
   });
 });
-
-const pics = document.querySelectorAll('.cardimage');
-pics.forEach((pic) => {
-  gsap.from(pic, {
-    opacity: 0,
-    width:0,
-    duration: 0.7,
-    ease:"power1.out",
-    scrollTrigger: {
-      trigger: pic,
-      start: "top bottom-=100"
-    }
-  });
-});
